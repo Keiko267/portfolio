@@ -61,3 +61,5 @@
   2. Lo dejamos para la siguiente sesión
 - **Tiempo invertido**: 2.5 h
 - **Siguiente paso**: Arreglar el botón de toggle de tema en pantallas pequeñas, crear contenido para las páginas de inicio, sobre mí, proyectos y contacto.
+
+//1 hora el 2025-09-21
