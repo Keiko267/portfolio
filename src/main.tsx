@@ -21,10 +21,6 @@ function Root() {
     localStorage.setItem("theme", darkMode ? "dark" : "light");
   }, [darkMode]);
 
-  React.useEffect(() => {
-    
-  })
-
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <CssBaseline />

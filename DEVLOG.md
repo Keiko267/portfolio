@@ -81,10 +81,14 @@
 
 ### 2025-09-22
 - **Fecha**: 2025-09-22
-- **Objetivo**: Hacer la página de sobre mí y añadir una línea de tiempo de habilidades.
+- **Objetivo**: Hacer la página de sobre mí y experiencia.
 - **Qué hice**:
   - Creé la página de sobre mí con un poco de texto y una línea de tiempo de habilidades
   - Hice el componente `SkillsAndAbout` para mostrar la línea de tiempo
   - Añadí algunos iconos a la línea de tiempo
-- **Tiempo invertido**: 1 h
+  - Creé la página de experiencia con una lista de trabajos y proyectos
+  - Hice el componente `TimelineBlock` para mostrar cada trabajo/proyecto
+  - Hice el componente `Experience` para mostrar la lista de trabajos/proyectos
+  - Añadí rutas para las nuevas páginas
+- **Tiempo invertido**: 2 h
 - **Siguiente paso**: Hacer la página de proyectos y la de contacto.
