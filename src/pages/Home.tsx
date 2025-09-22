@@ -1,5 +1,7 @@
 import Header from "../components/Header/Header";
 import Navbar from "../components/Navbar/Navbar";
+import SkillsAndAbout from "../components/SkillsAndAbout/SkillsAndAbout";
+
 
 export default function Home({
 	darkMode,
@@ -12,6 +14,7 @@ export default function Home({
 		<>
 			<Header darkMode={darkMode} setDarkMode={setDarkMode} />
 			<Navbar/>
+			<SkillsAndAbout />
 		</>
 	);
 }

@@ -130,7 +130,8 @@ const Header: React.FC<Props> = ({darkMode, setDarkMode}) => {
                     width: "100%",
                     height: "2px",
                     background: (theme) => `linear-gradient(to right, ${theme.palette.secondary.main}, ${theme.palette.background.default})`,
-                    mt: { xs: 2, md: -4 },
+                    mt: -2 ,
+                    display: { xs: "none", md: "block" },
                 }}
             />
         </Box>

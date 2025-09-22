@@ -16,7 +16,7 @@ import { Link as RouterLink } from "react-router-dom";
 
 const navItems = [
 	{ label: "Inicio", href: "/" },
-	{ label: "Sobre mí", href: "/about" },
+	{ label: "Experiencia", href: "/experience" },
 	{ label: "Proyectos", href: "/projects" },
 	{ label: "Contacto", href: "/contact" },
 ];
@@ -97,6 +97,15 @@ const Navbar: React.FC = () => {
 					</List>
 				</Box>
 			</Drawer>
+			<Box
+				sx={{ 
+					width: "100%",
+					mt: 0,
+					height: 2,
+					display: { xs: "none", md: "block" },
+					background: (theme) => `linear-gradient(to right, ${theme.palette.secondary.main}, ${theme.palette.background.default})`,
+				}}
+			/>
 		</>
 	);
 };

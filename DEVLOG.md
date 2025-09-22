@@ -62,4 +62,29 @@
 - **Tiempo invertido**: 2.5 h
 - **Siguiente paso**: Arreglar el botón de toggle de tema en pantallas pequeñas, crear contenido para las páginas de inicio, sobre mí, proyectos y contacto.
 
-//1 hora el 2025-09-21
+### 2025-09-21
+- **Fecha**: 2025-09-21
+- **Objetivo**: Hacer el componente principal de la web, un header y poner la navbar debajo.
+- **Qué hice**:
+  - Creé el componente `Header` usando otro portfolio como inspiración
+  - Bajé la navbar
+  - Subí una foto mía (hay que cambiarla por una mejor)
+  - Ajuste algunos de los colores del tema
+- **Errores / problemas**:
+  1. La foto que tengo no es muy buena, no se ve de calidad y el recorte no es el mejor
+  2. El botón del toggle de tema sigue sin estar bien en pantallas pequeñas y hay muchos más problemas en pantallas pequeñas ahora que incluí el header
+- **Solución final**:
+  1. Lo dejamos para más adelante, cuando tenga una foto mejor
+  2. Vamos a terminar de hacer la web en escritorio y luego ya nos pondremos con el responsive de pantallas pequeñas
+- **Tiempo invertido**: 1.5 h
+- **Siguiente paso**: Hacer las páginas de sobre mí, proyectos y contacto.
+
+### 2025-09-22
+- **Fecha**: 2025-09-22
+- **Objetivo**: Hacer la página de sobre mí y añadir una línea de tiempo de habilidades.
+- **Qué hice**:
+  - Creé la página de sobre mí con un poco de texto y una línea de tiempo de habilidades
+  - Hice el componente `SkillsAndAbout` para mostrar la línea de tiempo
+  - Añadí algunos iconos a la línea de tiempo
+- **Tiempo invertido**: 1 h
+- **Siguiente paso**: Hacer la página de proyectos y la de contacto.
