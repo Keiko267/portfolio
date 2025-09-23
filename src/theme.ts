@@ -1,6 +1,15 @@
 // theme.ts
 import { createTheme } from "@mui/material/styles";
-
+function overlay (base: string, color: string, opacity: number) {
+  const hexToRgb = (hex:string) => {
+    const bigint = parseInt(hex.slice(1), 16);
+    const r = (bigint >> 16) & 255;
+    const g = (bigint >> 8) & 255;
+    const b = bigint & 255;
+    return `${r}, ${g}, ${b}`;
+  };
+  return `linear-gradient(rgba(${hexToRgb(color)}, ${opacity}), rgba(${hexToRgb(color)}, ${opacity})), ${base})`;
+}
 export const lightTheme = createTheme({
   palette: {
     mode: "light",
@@ -30,11 +39,11 @@ export const darkTheme = createTheme({
     },
     secondary: {
       main: "#EF4444",
-      light: "rgba(220,38,38,0.6)",
+      light: "#dc262699",
     },
     background: {
-      default: "#131820", // Slightly more blackish than blue
-      paper: "#1E293B",
+      default: "#121212", 
+      paper: overlay("#121212", "EF4444", 0.08),
     },
     text: {
       primary: "#FFFFFF", 

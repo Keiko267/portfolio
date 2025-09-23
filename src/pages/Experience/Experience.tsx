@@ -1,4 +1,5 @@
-import { Box, Typography } from "@mui/material";
+import { useState } from "react";
+import { Box } from "@mui/material";
 import TimelineBlock from "../../components/TimelineBlock/TimelineBlock";
 import { Work, School, WorkspacePremium} from "@mui/icons-material";
 import Header from "../../components/Header/Header";
@@ -11,6 +12,8 @@ const Experience = ({
     darkMode: boolean;
     setDarkMode: (value: boolean) => void;
 }) => {
+    const [expandedIndex, setExpandedIndex] = useState<number | null>(0);
+
     const work = [
         {
             title: "Desarrollador Full Stack",
@@ -43,6 +46,12 @@ const Experience = ({
         }
     ];
 
+    const blocks = [
+        { icon: <Work />, title: "Experiencia Laboral", items: work },
+        { icon: <School />, title: "Educación", items: education },
+        { icon: <WorkspacePremium />, title: "Certificaciones", items: certifications },
+    ];
+
 
 
     return (
@@ -52,20 +61,23 @@ const Experience = ({
             <Box sx={{
                 mt: 8,
                 px: {xs: 2, md: 8},
-                alignItems: 'left',
-                textAlign: 'left',
-                
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 6,
             }}
             >
-                <Typography variant="h3" component="h1" sx={{ fontWeight: 'bold', mb: 4 }}>
-                    Experiencia
-                </Typography>
-                <TimelineBlock icon={<Work />} title="Experiencia Laboral" items={work} />
-                <TimelineBlock icon={<School />} title="Educación" items={education} />
-                <TimelineBlock icon={<WorkspacePremium />} title="Certificaciones" items={certifications} />
+                {blocks.map((block, index) => (
+                    <TimelineBlock
+                        key={index}
+                        icon={block.icon}
+                        title={block.title}
+                        items={block.items}
+                        expanded={expandedIndex === index}
+                        onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
+                    />
+                ))}
             </Box>
         </>
-
     )
 }
 

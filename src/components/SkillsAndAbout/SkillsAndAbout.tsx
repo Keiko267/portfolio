@@ -1,4 +1,4 @@
-import {Box, Typography} from "@mui/material";
+import {Box, Paper, Typography} from "@mui/material";
 import { Storage, Devices, Engineering } from "@mui/icons-material";
 const SkillsAndAbout = () => {
     const skills = [
@@ -61,11 +61,12 @@ const SkillsAndAbout = () => {
                 ))}
             </Box>
 
-            <Box
+            <Paper elevation={6}
                 sx={{
                     flex: 1,
                     p: 2,
                     textAlign: { xs: "center", md: "left" },
+                    borderRadius: 3,
                 }}
             >
                 <Typography variant="h4" component="h2" gutterBottom fontWeight="bold">
@@ -76,7 +77,7 @@ const SkillsAndAbout = () => {
                     Me especializo en desarrollo backend, pero también disfruto con frontend (con ayuda de alguien con buen gusto), algoritmos complejos, ingeniería del producto o análisis de datos. <br />
                     Siempre busco oportunidades para poder crecer profesionalmente, aprender y aportar valor en proyectos que me motiven.
                 </Typography>
-            </Box>
+            </Paper>
 
         </Box>
 

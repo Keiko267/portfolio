@@ -92,3 +92,13 @@
   - Añadí rutas para las nuevas páginas
 - **Tiempo invertido**: 2 h
 - **Siguiente paso**: Hacer la página de proyectos y la de contacto.
+
+### 2025-09-23
+- **Fecha**: 2025-09-23
+- **Objetivo**: Mejorar un poco la estética de la página
+- **Qué hice**:
+  - Me formé un poco en el uso de dark mode (https://m2.material.io/design/color/dark-theme.html#properties)
+  - Cambié el theme para que el modo oscuro tenga más contraste, se vea mejor y tenga distintas profundidades
+  - Añadí un poco de interactividad a los bloques de experiencia para que se expandan al hacer click y muestren más información
+- **Tiempo invertido**: 1h
+- **Siguiente paso**: Hacer la página de proyectos y la de contacto.
