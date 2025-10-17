@@ -102,3 +102,20 @@
   - Añadí un poco de interactividad a los bloques de experiencia para que se expandan al hacer click y muestren más información
 - **Tiempo invertido**: 1h
 - **Siguiente paso**: Hacer la página de proyectos y la de contacto.
+
+### 2025-10-02
+- **Fecha**: 2025-10-02
+- **Objetivo**: Hacer la página de proyectos
+- **Qué hice**:
+  - Creé la página de proyectos con una cuadrícula de tarjetas de proyecto
+  - Hice el componente `ProjectCard` para mostrar cada proyecto
+  - Añadí rutas para la nueva página
+  - Ajusté el diseño para que se vea bien en pantallas grandes
+- **Errores / problemas**:
+  1. No sé muy bien cómo hacer que las tarjetas se ajusten bien en pantallas medianas y pequeñas
+  2. Aprender la diferencia entre funciones flexha con llaves y sin llaves
+- **Solución final**:
+  1. Probé varias cosas y al final opté por hacer la estructuración dinámica en función del número de proyectos (máximo 4 columnas)
+  2. Leí un poco sobre arrow functions y entendí que si no tienen llaves devuelven el valor de la expresión directamente, mientras que si tienen llaves necesito un return explícito
+- **Tiempo invertido**: 1.5 h
+- **Siguiente paso**: Hacer la página de contacto y luego revisar el diseño responsive para pantallas pequeñas.

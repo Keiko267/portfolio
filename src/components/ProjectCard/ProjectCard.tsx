@@ -68,7 +68,7 @@ const ProjectCard = ({
                                     key={i}
                                     label={t}
                                     size="small"
-                                    sx={{ backgroundColor: 'rgba(239, 68, 68, 9.2)', color: 'text.primary', fontWeight: 'bold' }}
+                                    sx={{ backgroundColor: 'rgba(239, 68, 68, 0.2)', color: 'text.primary', fontWeight: 'bold' }}
                                 />
                             ))}
                         </Box>
