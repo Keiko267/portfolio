@@ -84,7 +84,6 @@ const ProjectCard = ({
                                 fontWeight: 'bold',
                             }}
                         >
-                            Cerrar
                         </Button>
                     </Box>
                 </Collapse>

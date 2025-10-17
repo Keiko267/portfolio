@@ -119,3 +119,18 @@
   2. Leí un poco sobre arrow functions y entendí que si no tienen llaves devuelven el valor de la expresión directamente, mientras que si tienen llaves necesito un return explícito
 - **Tiempo invertido**: 1.5 h
 - **Siguiente paso**: Hacer la página de contacto y luego revisar el diseño responsive para pantallas pequeñas.
+
+### 2025-10-17
+- **Fecha**: 2025-10-17
+- **Objetivo**: Hacer la página de contacto con un formulario funcional.
+- **Qué hice**:
+  - Creé la página de contacto con un formulario
+  - Hice el componente `ContactForm` para el formulario de contacto
+  - Usé EmailJS para enviar los mensajes del formulario a mi email usando variables de entorno
+  - Cambié algunos colores del tema secundario para que encajaran mejor
+- **Errores / problemas**:
+  1. Problemas para configurar EmailJS y que funcionara correctamente
+- **Solución final**:
+  1. Al parecer VITE solo permite variables de entorno que empiecen por VITE_, así que tuve que renombrar las variables de entorno para que EmailJS funcionara
+- **Tiempo invertido**: 2 h
+- **Siguiente paso**: Revisar el diseño responsive para pantallas pequeñas y hacer ajustes finales.

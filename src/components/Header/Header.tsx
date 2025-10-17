@@ -91,16 +91,16 @@ const Header: React.FC<Props> = ({darkMode, setDarkMode}) => {
                         Computer Engineer
                     </Typography>
                     <Box sx={{ mt: 4 }}>
-                        <Button
+                        {/* <Button
                             variant="contained"
                             color="secondary"
                             href="#contact"
                             sx={{ mr: 2, textTransform: "none" }}
                         >
                             Contact me
-                        </Button>
+                        </Button> */}
                         <Button
-                            variant="outlined"
+                            variant="contained"
                             color="secondary"
                             href="#resume"
                             sx={{ textTransform: "none" }}

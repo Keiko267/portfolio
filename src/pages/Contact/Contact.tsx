@@ -19,6 +19,8 @@ export default function Contact({ darkMode, setDarkMode }: ContactProps) {
                     px: { xs: 2, md: 8 },
                     display: 'flex',
                     justifyContent: 'center',
+                    maxWidth: '100%',
+                    mx: 'auto',
                 }}
             >
                 <ContactForm />

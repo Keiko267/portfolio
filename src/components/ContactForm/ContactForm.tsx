@@ -21,10 +21,10 @@ const ContactForm = () => {
         setStatus("sending");
         try {
             await emailjs.send(
-                import.meta.env.MAIL_SERVICE_ID,
-                import.meta.env.MAIL_TEMPLATE_ID,
+                import.meta.env.VITE_MAIL_SERVICE_ID,
+                import.meta.env.VITE_MAIL_TEMPLATE_ID,
                 formData,
-                import.meta.env.MAIL_PUBLIC_KEY
+                import.meta.env.VITE_MAIL_PUBLIC_KEY
             );
             setStatus("success");
             setFormData({ name: "", email: "", message: "", time: new Date().toISOString() });
@@ -33,7 +33,7 @@ const ContactForm = () => {
             setStatus("error");
         }
     };
-
+    console.log(new Date().toDateString());
     return (
         <Box
             sx={{
@@ -41,6 +41,8 @@ const ContactForm = () => {
                 justifyContent: 'center',
                 mt: 8,
                 px: { xs: 2, md: 8 },
+                width: '100%',
+                mx: 'auto',
             }}
         >
             <Card
