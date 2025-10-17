@@ -78,7 +78,7 @@ const Header: React.FC<Props> = ({darkMode, setDarkMode}) => {
                             }}
                         />
                         <Typography variant="h4" component="h2">
-                            I'm Carlos
+                            I'm Carlos <Typography variant="caption" component="span" color="text.secondary">(he/him)</Typography>
                         </Typography>
                     </Box>
 
