@@ -24,7 +24,7 @@ function Root() {
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <CssBaseline />
-      <BrowserRouter basename="/portfolio">
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <App darkMode={darkMode} setDarkMode={setDarkMode} />
       </BrowserRouter>
     </ThemeProvider>
