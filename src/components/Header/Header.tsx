@@ -14,7 +14,7 @@ const Header: React.FC<Props> = ({darkMode, setDarkMode}) => {
                 width: "100%",
                 minHeight: "100vh",
                 mt: -10,
-                background: `radial-gradient(circle at 75.5% 45%, ${theme.palette.secondary.main} 7%, ${theme.palette.secondary.light} 15%,  ${theme.palette.background.default} 25%)`,
+                background: `radial-gradient(circle at 75.5% 45%, ${theme.palette.secondary.main} 5%, ${theme.palette.secondary.light} 10%,  ${theme.palette.background.default} 15%)`,
             })}
         >
             <Box
@@ -121,7 +121,7 @@ const Header: React.FC<Props> = ({darkMode, setDarkMode}) => {
                     <img
                         src={meImage}
                         alt="Me"
-                        style={{ borderRadius: "50%", width: 200, height: 300 }}
+                        style={{ borderRadius: "50%", height: 300 }}
                     />
                 </Box>
             </Box>
